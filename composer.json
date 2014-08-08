@@ -1,0 +1,13 @@
+{
+  "name":              "packaged/dalBench",
+  "require":           {
+    "illuminate/database": "*",
+    "packaged/dal":        "*"
+  },
+  "autoload":          {
+    "psr-4": {
+      "DalBench\\": "src"
+    }
+  },
+  "minimum-stability": "dev"
+}
