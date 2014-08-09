@@ -1,5 +1,6 @@
 {
   "name":              "packaged/dalBench",
+  "description":       "Benchmark Testing for DAL, to ensure high speeds and low memory",
   "require":           {
     "illuminate/database": "*",
     "packaged/dal":        "*"
