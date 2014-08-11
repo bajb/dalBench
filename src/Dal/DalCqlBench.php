@@ -3,11 +3,11 @@ namespace DalBench\Dal;
 
 use DalBench\Bench;
 
-class DalMySQLiBench extends Bench
+class DalCqlBench extends Bench
 {
   public function runTest()
   {
-    $dao           = new MySQLiDao();
+    $dao           = new CqlDao();
     $dao->id       = 1;
     $dao->username = 'random';
     $dao->display  = time();
@@ -15,7 +15,7 @@ class DalMySQLiBench extends Bench
     $dao->display = 'random ' . microtime();
     $dao->save();
     $dao     = null;
-    $dao     = new MySQLiDao();
+    $dao     = new CqlDao();
     $dao->id = 1;
     $dao->load();
     $dao->delete();

@@ -30,9 +30,14 @@ $capsule->bootEloquent();
 
 $libs = [
   new \DalBench\Dal\DalPdoBench(),
+  new \DalBench\Dal\DalCqlBench(),
   new \DalBench\Eloquent\EloquentBench(),
 ];
 shuffle($libs);
+
+\DalBench\Bench::$runs   = 4;
+\DalBench\Bench::$perRun = 1000;
+
 /**
  * @var $libs \DalBench\Bench[]
  */

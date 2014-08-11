@@ -3,7 +3,7 @@ namespace DalBench\Dal;
 
 use Packaged\Dal\Ql\QlDao;
 
-class MySQLiDao extends QlDao
+class CqlDao extends QlDao
 {
   public $id;
   public $username;
@@ -11,7 +11,7 @@ class MySQLiDao extends QlDao
 
   protected function _configure()
   {
-    $this->_setDataStoreName('mysqlids');
+    $this->_setDataStoreName('cqlds');
   }
 
   public function getTableName()
